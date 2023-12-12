@@ -20,6 +20,7 @@ interface ITodoList {
 }
 const Home: React.FC = () => {
   const [activeCard, setActiveCard] = useState<Todo | null>(null)
+  const [activeTab, setActiveTab] = useState<boolean>(false)
 
   const [todoList, setTodoList] = useState<ITodoList>({
     Todo: [
